@@ -68,6 +68,7 @@ allprojects {
 
         def junit = hs.android.lib.junit
         testImplementation "junit:junit:$junit"
+
       }
     }
   }

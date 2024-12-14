@@ -51,6 +51,15 @@ files:
   - name: build.gradle
     visible: true
     learner_created: false
+  - name: src/main/res/navigation/nav_graph.xml
+    visible: true
+    learner_created: true
+  - name: src/main/res/layout/fragment_login.xml
+    visible: true
+    learner_created: true
+  - name: src/main/java/org/hyperskill/simplebankmanager/LoginFragment.kt
+    visible: true
+    learner_created: true
 feedback_link: https://hyperskill.org/projects/333/stages/1868/implement#comment
 status: Unchecked
 record: -1
