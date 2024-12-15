@@ -60,6 +60,12 @@ files:
   - name: src/main/java/org/hyperskill/simplebankmanager/LoginFragment.kt
     visible: true
     learner_created: true
+  - name: src/main/java/org/hyperskill/simplebankmanager/User.kt
+    visible: true
+    learner_created: true
 feedback_link: https://hyperskill.org/projects/333/stages/1868/implement#comment
-status: Unchecked
-record: -1
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sun, 15 Dec 2024 07:42:00 UTC"
+record: 1

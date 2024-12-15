@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.hyperskill.simplebankmanager.Stage1UnitTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2024-12-15T13:03:18" hostname="MacBook-Air-Wioleta.local" time="4.401">
+  <properties/>
+  <testcase name="test00_checkLoginFragmentHasViews" classname="org.hyperskill.simplebankmanager.Stage1UnitTest" time="3.783"/>
+  <testcase name="test01_checkLoginWithDefaultValuesSucceed" classname="org.hyperskill.simplebankmanager.Stage1UnitTest" time="0.16"/>
+  <testcase name="test02_checkLoginWithDefaultValuesFailWithWrongName" classname="org.hyperskill.simplebankmanager.Stage1UnitTest" time="0.099"/>
+  <testcase name="test03_checkLoginWithDefaultValuesFailWithWrongPass" classname="org.hyperskill.simplebankmanager.Stage1UnitTest" time="0.088"/>
+  <testcase name="test04_checkLoginWithCustomValuesSucceed" classname="org.hyperskill.simplebankmanager.Stage1UnitTest" time="0.094"/>
+  <testcase name="test05_checkLoginWithCustomValuesFailWithWrongName" classname="org.hyperskill.simplebankmanager.Stage1UnitTest" time="0.084"/>
+  <testcase name="test06_checkLoginWithCustomValuesFailWithWrongPass" classname="org.hyperskill.simplebankmanager.Stage1UnitTest" time="0.093"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

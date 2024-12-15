@@ -63,6 +63,24 @@ files:
   - name: src/test/java/org/hyperskill/simplebankmanager/Stage3UnitTest.kt
     visible: false
     learner_created: false
+  - name: src/main/java/org/hyperskill/simplebankmanager/UserMenuFragment.kt
+    visible: true
+    learner_created: true
+  - name: src/main/res/layout/fragment_user_menu.xml
+    visible: true
+    learner_created: true
+  - name: src/main/res/layout/fragment_login.xml
+    visible: true
+    learner_created: true
+  - name: src/main/java/org/hyperskill/simplebankmanager/LoginFragment.kt
+    visible: true
+    learner_created: true
+  - name: src/main/java/org/hyperskill/simplebankmanager/User.kt
+    visible: true
+    learner_created: true
+  - name: src/main/res/navigation/nav_graph.xml
+    visible: true
+    learner_created: true
 feedback_link: https://hyperskill.org/projects/333/stages/1870/implement#comment
 status: Unchecked
 record: -1

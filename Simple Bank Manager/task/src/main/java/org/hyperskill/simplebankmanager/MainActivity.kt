@@ -1,12 +1,14 @@
 package org.hyperskill.simplebankmanager
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), LoginFragment.LoginFragmentListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
 
         /*
             Tests for android can not guarantee the correctness of solutions that make use of
@@ -22,5 +24,24 @@ class MainActivity : AppCompatActivity() {
             is considered a bad practice anyway and no measure
             attempting to give support to that pattern will be made.
          */
+    }
+
+    override fun getLoginAndPassword(usernameInput: String, passwordInput: String) {
+        var usernameIntent = "Lara"
+        var passwordIntent = "1234"
+
+        if (!intent.extras?.getString("username").isNullOrEmpty()) {
+            usernameIntent = intent.extras?.getString("username").toString()
+        }
+
+        if (!intent.extras?.getString("password").isNullOrEmpty()) {
+            passwordIntent = intent.extras?.getString("password").toString()
+        }
+
+        if (usernameIntent == usernameInput && passwordIntent == passwordInput) {
+            Toast.makeText(this, "logged in", Toast.LENGTH_SHORT).show()
+        } else {
+            Toast.makeText(this, "invalid credentials", Toast.LENGTH_SHORT).show()
+        }
     }
 }
