@@ -1,5 +1,6 @@
 package org.hyperskill.simplebankmanager
 
+import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -8,11 +9,12 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import androidx.navigation.fragment.findNavController
-import org.hyperskill.simplebankmanager.LoginFragment.LoginFragmentListener
 
 class UserMenuFragment : Fragment() {
 
     private var username: String? = null
+    private var transferredAmount: Double? = null
+    private var callback: UserMenuFragmentListener ? = null
 
     private lateinit var userMenuWelcomeTextView: TextView
     private lateinit var userMenuBalanceButton: Button
@@ -24,7 +26,13 @@ class UserMenuFragment : Fragment() {
         super.onCreate(savedInstanceState)
         arguments?.let {
             username = it.getString("username")
+            transferredAmount = it.getDouble("transferredAmount")
         }
+    }
+
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
+        callback = context as UserMenuFragmentListener
     }
 
     override fun onCreateView(
@@ -44,9 +52,31 @@ class UserMenuFragment : Fragment() {
 
         userMenuWelcomeTextView.text = "Welcome $username"
 
+        var balance = callback?.getBalance() ?: 100.00
+
+        if (transferredAmount != null) {
+            balance -= transferredAmount!!
+        }
+
+        val bundle = Bundle()
+        bundle.putDouble("balance", balance)
+
         userMenuBalanceButton.setOnClickListener {
 
-            findNavController().navigate(R.id.action_userMenuFragment_to_viewBalanceFragment)
+            findNavController().navigate(R.id.action_userMenuFragment_to_viewBalanceFragment, bundle)
         }
+
+        userMenuTransferFundsButton.setOnClickListener {
+            findNavController().navigate(R.id.action_userMenuFragment_to_transferFundsFragment, bundle)
+        }
+    }
+
+    override fun onDetach() {
+        super.onDetach()
+        callback = null
+    }
+
+    interface UserMenuFragmentListener {
+        fun getBalance() : Double?
     }
 }

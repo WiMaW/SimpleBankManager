@@ -3110,6 +3110,7 @@ id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
 id action_text
+id action_userMenuFragment_to_transferFundsFragment
 id action_userMenuFragment_to_viewBalanceFragment
 id actions
 id activity_chooser_view_content
@@ -3487,6 +3488,10 @@ id toggle
 id top
 id topPanel
 id touch_outside
+id transferFundsAccountEditText
+id transferFundsAmountEditText
+id transferFundsButton
+id transferFundsFragment
 id transitionToEnd
 id transitionToStart
 id transition_current_scene
@@ -3654,6 +3659,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_login
+layout fragment_transfer_funds
 layout fragment_user_menu
 layout fragment_view_balance
 layout ime_base_split_test_activity

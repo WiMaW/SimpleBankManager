@@ -11,17 +11,14 @@ import org.hyperskill.simplebankmanager.LoginFragment.LoginFragmentListener
 
 class ViewBalanceFragment : Fragment() {
 
-    private var callback: ViewBalanceFragmentListener? = null
-
     private lateinit var balanceTextView: TextView
+    private var balance: Double? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-    }
-
-    override fun onAttach(context: Context) {
-        super.onAttach(context)
-        callback = context as ViewBalanceFragmentListener
+        arguments?.let {
+            balance = it.getDouble("balance")
+        }
     }
 
     override fun onCreateView(
@@ -37,14 +34,6 @@ class ViewBalanceFragment : Fragment() {
 
         balanceTextView = view.findViewById(R.id.viewBalanceAmountTextView)
 
-        balanceTextView.text = String.format("$%.2f", callback?.getBalance() ?: 100.00)
-    }
-    override fun onDetach() {
-        super.onDetach()
-        callback = null
-    }
-
-    interface ViewBalanceFragmentListener {
-        fun getBalance() : Double?
+        balanceTextView.text = String.format("$%.2f", balance ?: 100.00)
     }
 }
