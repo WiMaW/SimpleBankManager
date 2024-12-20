@@ -7,6 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
+import androidx.navigation.fragment.findNavController
+import org.hyperskill.simplebankmanager.LoginFragment.LoginFragmentListener
 
 class UserMenuFragment : Fragment() {
 
@@ -41,5 +43,10 @@ class UserMenuFragment : Fragment() {
         userMenuPayBillsButton = view.findViewById(R.id.userMenuPayBillsButton)
 
         userMenuWelcomeTextView.text = "Welcome $username"
+
+        userMenuBalanceButton.setOnClickListener {
+
+            findNavController().navigate(R.id.action_userMenuFragment_to_viewBalanceFragment)
+        }
     }
 }

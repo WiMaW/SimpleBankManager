@@ -4,11 +4,10 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
-class MainActivity : AppCompatActivity(), LoginFragment.LoginFragmentListener {
+class MainActivity : AppCompatActivity(), LoginFragment.LoginFragmentListener, ViewBalanceFragment.ViewBalanceFragmentListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
 
         /*
             Tests for android can not guarantee the correctness of solutions that make use of
@@ -43,5 +42,14 @@ class MainActivity : AppCompatActivity(), LoginFragment.LoginFragmentListener {
         } else {
             Toast.makeText(this, "invalid credentials", Toast.LENGTH_SHORT).show()
         }
+    }
+
+    override fun getBalance(): Double? {
+        var balance: Double? = 100.0
+
+        if (!intent.extras?.getDouble("balance").toString().isNullOrEmpty()) {
+            balance = intent.extras?.getDouble("balance")
+        }
+        return balance
     }
 }

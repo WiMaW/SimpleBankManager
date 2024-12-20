@@ -81,6 +81,21 @@ files:
   - name: src/main/res/navigation/nav_graph.xml
     visible: true
     learner_created: true
+  - name: src/main/res/layout/fragment_view_balance.xml
+    visible: true
+    learner_created: true
+  - name: src/main/java/org/hyperskill/simplebankmanager/ViewBalanceFragment.kt
+    visible: true
+    learner_created: true
+  - name: src/main/res/layout/fragment_transfer_funds.xml
+    visible: true
+    learner_created: true
+  - name: src/main/java/org/hyperskill/simplebankmanager/TransferFundsFragment.kt
+    visible: true
+    learner_created: true
 feedback_link: https://hyperskill.org/projects/333/stages/1870/implement#comment
-status: Unchecked
+status: Failed
+feedback:
+  message: View with id &quot;transferFundsAccountEditText&quot; was not found
+  time: "Fri, 20 Dec 2024 18:10:11 UTC"
 record: -1

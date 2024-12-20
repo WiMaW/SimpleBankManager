@@ -18,5 +18,14 @@
         android:id="@+id/userMenuFragment"
         android:name="org.hyperskill.simplebankmanager.UserMenuFragment"
         android:label="fragment_user_menu"
-        tools:layout="@layout/fragment_user_menu" />
+        tools:layout="@layout/fragment_user_menu" >
+        <action
+            android:id="@+id/action_userMenuFragment_to_viewBalanceFragment"
+            app:destination="@id/viewBalanceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewBalanceFragment"
+        android:name="org.hyperskill.simplebankmanager.ViewBalanceFragment"
+        android:label="fragment_view_balance"
+        tools:layout="@layout/fragment_view_balance" />
 </navigation>

@@ -10,6 +10,7 @@ color white
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 id action_loginFragment_to_userMenuFragment
+id action_userMenuFragment_to_viewBalanceFragment
 id loginButton
 id loginFragment
 id loginPassword
@@ -22,9 +23,13 @@ id userMenuPayBillsButton
 id userMenuTransferFundsButton
 id userMenuViewBalanceButton
 id userMenuWelcomeTextView
+id viewBalanceAmountTextView
+id viewBalanceFragment
+id viewBalanceLabelTextView
 layout activity_main
 layout fragment_login
 layout fragment_user_menu
+layout fragment_view_balance
 mipmap ic_launcher
 mipmap ic_launcher_round
 navigation nav_graph
