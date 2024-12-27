@@ -90,7 +90,7 @@ files:
   - name: src/main/java/org/hyperskill/simplebankmanager/TransferFundsFragment.kt
     visible: true
     learner_created: true
-feedback_link: https://hyperskill.org/projects/333/stages/1870/implement#comment
+feedback_link: https://hyperskill.org/learn/step/27107#comment
 status: Solved
 feedback:
   message: Congratulations!

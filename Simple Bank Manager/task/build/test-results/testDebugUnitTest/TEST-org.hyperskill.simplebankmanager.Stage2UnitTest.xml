@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.hyperskill.simplebankmanager.Stage2UnitTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-12-20T20:00:52" hostname="MacBook-Air-Wioleta.local" time="0.12">
+<testsuite name="org.hyperskill.simplebankmanager.Stage2UnitTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-12-27T10:05:10" hostname="MacBook-Air-Wioleta.local" time="0.168">
   <properties/>
-  <testcase name="test00_checkLoginWithDefaultValuesSucceed" classname="org.hyperskill.simplebankmanager.Stage2UnitTest" time="0.07"/>
-  <testcase name="test01_checkLoginWithCustomValuesSucceed" classname="org.hyperskill.simplebankmanager.Stage2UnitTest" time="0.05"/>
+  <testcase name="test00_checkLoginWithDefaultValuesSucceed" classname="org.hyperskill.simplebankmanager.Stage2UnitTest" time="0.078"/>
+  <testcase name="test01_checkLoginWithCustomValuesSucceed" classname="org.hyperskill.simplebankmanager.Stage2UnitTest" time="0.09"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

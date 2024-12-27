@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import androidx.navigation.fragment.findNavController
+import java.io.Serializable
 
 class UserMenuFragment : Fragment() {
 
@@ -58,16 +59,23 @@ class UserMenuFragment : Fragment() {
             balance -= transferredAmount!!
         }
 
-        val bundle = Bundle()
-        bundle.putDouble("balance", balance)
+        val bundleBalance = Bundle()
+        bundleBalance.putDouble("balance", balance)
 
         userMenuBalanceButton.setOnClickListener {
-
-            findNavController().navigate(R.id.action_userMenuFragment_to_viewBalanceFragment, bundle)
+            findNavController().navigate(R.id.action_userMenuFragment_to_viewBalanceFragment, bundleBalance)
         }
 
         userMenuTransferFundsButton.setOnClickListener {
-            findNavController().navigate(R.id.action_userMenuFragment_to_transferFundsFragment, bundle)
+            findNavController().navigate(R.id.action_userMenuFragment_to_transferFundsFragment, bundleBalance)
+        }
+
+        val exchangeMap = callback?.getExchangeMap()
+        val bundleExchangeMap = Bundle()
+        bundleExchangeMap.putSerializable("exchangeMap", exchangeMap)
+
+        userMenuExchangeCalculatorButton.setOnClickListener {
+            findNavController().navigate(R.id.action_userMenuFragment_to_calculateExchangeFragment, bundleExchangeMap)
         }
     }
 
@@ -78,5 +86,6 @@ class UserMenuFragment : Fragment() {
 
     interface UserMenuFragmentListener {
         fun getBalance() : Double?
+        fun getExchangeMap() : Serializable?
     }
 }

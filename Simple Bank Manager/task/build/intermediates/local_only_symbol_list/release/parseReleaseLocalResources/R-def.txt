@@ -1,5 +1,6 @@
 R_DEF: Internal format may change without notice
 local
+array currencies_array
 color black
 color purple_200
 color purple_500
@@ -10,8 +11,17 @@ color white
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 id action_loginFragment_to_userMenuFragment
+id action_userMenuFragment_to_calculateExchangeFragment
 id action_userMenuFragment_to_transferFundsFragment
 id action_userMenuFragment_to_viewBalanceFragment
+id calculateExchangeAmountEditText
+id calculateExchangeButton
+id calculateExchangeDisplayTextView
+id calculateExchangeFragment
+id calculateExchangeFromSpinner
+id calculateExchangeLabelFromTextView
+id calculateExchangeLabelToTextView
+id calculateExchangeToSpinner
 id loginButton
 id loginFragment
 id loginPassword
@@ -32,6 +42,7 @@ id viewBalanceAmountTextView
 id viewBalanceFragment
 id viewBalanceLabelTextView
 layout activity_main
+layout fragment_calculate_exchange
 layout fragment_login
 layout fragment_transfer_funds
 layout fragment_user_menu

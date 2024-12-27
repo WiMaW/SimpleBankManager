@@ -1,5 +1,13 @@
 [
     {
+        "merged": "/Users/wioletawrobel/.gradle/daemon/8.9/org.hyperskill.simplebankmanager.Simple_Bank_Manager-task-mergeDebugResources-47:/layout/fragment_transfer_funds.xml",
+        "source": "/Users/wioletawrobel/.gradle/daemon/8.9/org.hyperskill.simplebankmanager.Simple_Bank_Manager-task-main-50:/layout/fragment_transfer_funds.xml"
+    },
+    {
+        "merged": "org.hyperskill.simplebankmanager.Simple_Bank_Manager-task-mergeDebugResources-47:/layout/fragment_calculate_exchange.xml",
+        "source": "org.hyperskill.simplebankmanager.Simple_Bank_Manager-task-main-50:/layout/fragment_calculate_exchange.xml"
+    },
+    {
         "merged": "/Users/wioletawrobel/.gradle/daemon/8.9/org.hyperskill.simplebankmanager.Simple_Bank_Manager-task-mergeDebugResources-47:/layout/fragment_login.xml",
         "source": "/Users/wioletawrobel/.gradle/daemon/8.9/org.hyperskill.simplebankmanager.Simple_Bank_Manager-task-main-50:/layout/fragment_login.xml"
     },
@@ -12,11 +20,11 @@
         "source": "/Users/wioletawrobel/.gradle/daemon/8.9/org.hyperskill.simplebankmanager.Simple_Bank_Manager-task-main-50:/layout/fragment_user_menu.xml"
     },
     {
-        "merged": "org.hyperskill.simplebankmanager.Simple_Bank_Manager-task-mergeDebugResources-47:/layout/fragment_transfer_funds.xml",
-        "source": "org.hyperskill.simplebankmanager.Simple_Bank_Manager-task-main-50:/layout/fragment_transfer_funds.xml"
-    },
-    {
         "merged": "/Users/wioletawrobel/.gradle/daemon/8.9/org.hyperskill.simplebankmanager.Simple_Bank_Manager-task-mergeDebugResources-47:/layout/activity_main.xml",
         "source": "/Users/wioletawrobel/.gradle/daemon/8.9/org.hyperskill.simplebankmanager.Simple_Bank_Manager-task-main-50:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/wioletawrobel/.gradle/daemon/8.9/org.hyperskill.simplebankmanager.Simple_Bank_Manager-task-mergeDebugResources-47:/layout/fragment_calculate_exchange.xml",
+        "source": "/Users/wioletawrobel/.gradle/daemon/8.9/org.hyperskill.simplebankmanager.Simple_Bank_Manager-task-main-50:/layout/fragment_calculate_exchange.xml"
     }
 ]

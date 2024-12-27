@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.hyperskill.simplebankmanager.Stage1UnitTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2024-12-20T20:00:52" hostname="MacBook-Air-Wioleta.local" time="0.375">
+<testsuite name="org.hyperskill.simplebankmanager.Stage1UnitTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2024-12-27T10:05:09" hostname="MacBook-Air-Wioleta.local" time="0.514">
   <properties/>
-  <testcase name="test00_checkLoginFragmentHasViews" classname="org.hyperskill.simplebankmanager.Stage1UnitTest" time="0.038"/>
-  <testcase name="test01_checkLoginWithDefaultValuesSucceed" classname="org.hyperskill.simplebankmanager.Stage1UnitTest" time="0.052"/>
-  <testcase name="test02_checkLoginWithDefaultValuesFailWithWrongName" classname="org.hyperskill.simplebankmanager.Stage1UnitTest" time="0.069"/>
-  <testcase name="test03_checkLoginWithDefaultValuesFailWithWrongPass" classname="org.hyperskill.simplebankmanager.Stage1UnitTest" time="0.056"/>
-  <testcase name="test04_checkLoginWithCustomValuesSucceed" classname="org.hyperskill.simplebankmanager.Stage1UnitTest" time="0.052"/>
-  <testcase name="test05_checkLoginWithCustomValuesFailWithWrongName" classname="org.hyperskill.simplebankmanager.Stage1UnitTest" time="0.049"/>
-  <testcase name="test06_checkLoginWithCustomValuesFailWithWrongPass" classname="org.hyperskill.simplebankmanager.Stage1UnitTest" time="0.058"/>
+  <testcase name="test00_checkLoginFragmentHasViews" classname="org.hyperskill.simplebankmanager.Stage1UnitTest" time="0.075"/>
+  <testcase name="test01_checkLoginWithDefaultValuesSucceed" classname="org.hyperskill.simplebankmanager.Stage1UnitTest" time="0.059"/>
+  <testcase name="test02_checkLoginWithDefaultValuesFailWithWrongName" classname="org.hyperskill.simplebankmanager.Stage1UnitTest" time="0.149"/>
+  <testcase name="test03_checkLoginWithDefaultValuesFailWithWrongPass" classname="org.hyperskill.simplebankmanager.Stage1UnitTest" time="0.052"/>
+  <testcase name="test04_checkLoginWithCustomValuesSucceed" classname="org.hyperskill.simplebankmanager.Stage1UnitTest" time="0.065"/>
+  <testcase name="test05_checkLoginWithCustomValuesFailWithWrongName" classname="org.hyperskill.simplebankmanager.Stage1UnitTest" time="0.052"/>
+  <testcase name="test06_checkLoginWithCustomValuesFailWithWrongPass" classname="org.hyperskill.simplebankmanager.Stage1UnitTest" time="0.061"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

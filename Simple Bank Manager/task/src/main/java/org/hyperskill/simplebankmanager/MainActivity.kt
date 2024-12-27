@@ -3,8 +3,10 @@ package org.hyperskill.simplebankmanager
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import java.io.Serializable
 
-class MainActivity : AppCompatActivity(), LoginFragment.LoginFragmentListener, UserMenuFragment.UserMenuFragmentListener {
+class MainActivity : AppCompatActivity(), LoginFragment.LoginFragmentListener,
+    UserMenuFragment.UserMenuFragmentListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -24,6 +26,11 @@ class MainActivity : AppCompatActivity(), LoginFragment.LoginFragmentListener, U
             attempting to give support to that pattern will be made.
          */
     }
+
+    override fun getExchangeMap() : Serializable? {
+        return intent.extras?.getSerializable("exchangeMap")
+    }
+
 
     override fun getLoginAndPassword(usernameInput: String, passwordInput: String) {
         var usernameIntent = "Lara"

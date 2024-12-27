@@ -63,7 +63,7 @@ files:
   - name: src/main/java/org/hyperskill/simplebankmanager/User.kt
     visible: true
     learner_created: true
-feedback_link: https://hyperskill.org/projects/333/stages/1868/implement#comment
+feedback_link: https://hyperskill.org/learn/step/27105#comment
 status: Solved
 feedback:
   message: Congratulations!

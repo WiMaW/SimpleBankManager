@@ -96,6 +96,15 @@ files:
   - name: src/main/res/layout/fragment_transfer_funds.xml
     visible: true
     learner_created: true
-feedback_link: https://hyperskill.org/projects/333/stages/1871/implement#comment
-status: Unchecked
+  - name: src/main/res/layout/fragment_calculate_exchange.xml
+    visible: true
+    learner_created: true
+  - name: src/main/java/org/hyperskill/simplebankmanager/CalculateExchangeFragment.kt
+    visible: true
+    learner_created: true
+feedback_link: https://hyperskill.org/learn/step/27108#comment
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Fri, 27 Dec 2024 10:05:12 UTC"
 record: -1

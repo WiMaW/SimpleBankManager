@@ -85,6 +85,7 @@ animator nav_default_enter_anim
 animator nav_default_exit_anim
 animator nav_default_pop_enter_anim
 animator nav_default_pop_exit_anim
+array currencies_array
 attr action
 attr actionBarDivider
 attr actionBarItemBackground
@@ -3110,6 +3111,7 @@ id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
 id action_text
+id action_userMenuFragment_to_calculateExchangeFragment
 id action_userMenuFragment_to_transferFundsFragment
 id action_userMenuFragment_to_viewBalanceFragment
 id actions
@@ -3138,6 +3140,14 @@ id bottom
 id bounce
 id buttonPanel
 id cache_measures
+id calculateExchangeAmountEditText
+id calculateExchangeButton
+id calculateExchangeDisplayTextView
+id calculateExchangeFragment
+id calculateExchangeFromSpinner
+id calculateExchangeLabelFromTextView
+id calculateExchangeLabelToTextView
+id calculateExchangeToSpinner
 id cancel_button
 id center
 id centerCrop
@@ -3658,6 +3668,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_calculate_exchange
 layout fragment_login
 layout fragment_transfer_funds
 layout fragment_user_menu
