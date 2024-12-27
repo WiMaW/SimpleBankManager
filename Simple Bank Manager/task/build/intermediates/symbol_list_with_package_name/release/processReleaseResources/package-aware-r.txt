@@ -3110,8 +3110,10 @@ id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
+id action_payBillsFragment_to_userMenuFragment
 id action_text
 id action_userMenuFragment_to_calculateExchangeFragment
+id action_userMenuFragment_to_payBillsFragment
 id action_userMenuFragment_to_transferFundsFragment
 id action_userMenuFragment_to_viewBalanceFragment
 id actions
@@ -3383,6 +3385,9 @@ id parent_matrix
 id password_toggle
 id path
 id pathRelative
+id payBillsCodeInputEditText
+id payBillsFragment
+id payBillsShowBillInfoButton
 id peekHeight
 id percent
 id pin
@@ -3670,6 +3675,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_calculate_exchange
 layout fragment_login
+layout fragment_pay_bills
 layout fragment_transfer_funds
 layout fragment_user_menu
 layout fragment_view_balance

@@ -15,7 +15,9 @@ class UserMenuFragment : Fragment() {
 
     private var username: String? = null
     private var transferredAmount: Double? = null
-    private var callback: UserMenuFragmentListener ? = null
+    private var amountToPayBills: Double = 0.0
+    private var callback: UserMenuFragmentListener? = null
+    private var callbackForBalance: UserMenuFragmentListenerForBalance? = null
 
     private lateinit var userMenuWelcomeTextView: TextView
     private lateinit var userMenuBalanceButton: Button
@@ -28,12 +30,14 @@ class UserMenuFragment : Fragment() {
         arguments?.let {
             username = it.getString("username")
             transferredAmount = it.getDouble("transferredAmount")
+            amountToPayBills = it.getDouble("amountToPayBill")
         }
     }
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
         callback = context as UserMenuFragmentListener
+        callbackForBalance = context as UserMenuFragmentListenerForBalance
     }
 
     override fun onCreateView(
@@ -53,14 +57,17 @@ class UserMenuFragment : Fragment() {
 
         userMenuWelcomeTextView.text = "Welcome $username"
 
-        var balance = callback?.getBalance() ?: 100.00
+        var balance = callbackForBalance?.getBalance() ?: 100.00
+        balance -= amountToPayBills
 
-        if (transferredAmount != null) {
-            balance -= transferredAmount!!
+        if (balance != null) {
+            if (transferredAmount != null) {
+                balance -= transferredAmount!!
+            }
         }
 
         val bundleBalance = Bundle()
-        bundleBalance.putDouble("balance", balance)
+        bundleBalance.putDouble("balance", balance!!)
 
         userMenuBalanceButton.setOnClickListener {
             findNavController().navigate(R.id.action_userMenuFragment_to_viewBalanceFragment, bundleBalance)
@@ -77,6 +84,15 @@ class UserMenuFragment : Fragment() {
         userMenuExchangeCalculatorButton.setOnClickListener {
             findNavController().navigate(R.id.action_userMenuFragment_to_calculateExchangeFragment, bundleExchangeMap)
         }
+
+        val payBillsInfoMap = callback?.getBillInfoMap()
+        val bundlePayBillsInfoMap = Bundle()
+        bundlePayBillsInfoMap.putSerializable("billInfo", payBillsInfoMap)
+        bundlePayBillsInfoMap.putDouble("balance", balance)
+
+        userMenuPayBillsButton.setOnClickListener {
+            findNavController().navigate(R.id.action_userMenuFragment_to_payBillsFragment, bundlePayBillsInfoMap)
+        }
     }
 
     override fun onDetach() {
@@ -85,7 +101,11 @@ class UserMenuFragment : Fragment() {
     }
 
     interface UserMenuFragmentListener {
-        fun getBalance() : Double?
         fun getExchangeMap() : Serializable?
+        fun getBillInfoMap() : Serializable?
+    }
+
+    interface UserMenuFragmentListenerForBalance {
+        fun getBalance() : Double?
     }
 }

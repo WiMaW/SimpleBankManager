@@ -11,7 +11,9 @@ color white
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 id action_loginFragment_to_userMenuFragment
+id action_payBillsFragment_to_userMenuFragment
 id action_userMenuFragment_to_calculateExchangeFragment
+id action_userMenuFragment_to_payBillsFragment
 id action_userMenuFragment_to_transferFundsFragment
 id action_userMenuFragment_to_viewBalanceFragment
 id calculateExchangeAmountEditText
@@ -28,6 +30,9 @@ id loginPassword
 id loginUsername
 id nav_graph
 id nav_host_fragment
+id payBillsCodeInputEditText
+id payBillsFragment
+id payBillsShowBillInfoButton
 id transferFundsAccountEditText
 id transferFundsAmountEditText
 id transferFundsButton
@@ -44,6 +49,7 @@ id viewBalanceLabelTextView
 layout activity_main
 layout fragment_calculate_exchange
 layout fragment_login
+layout fragment_pay_bills
 layout fragment_transfer_funds
 layout fragment_user_menu
 layout fragment_view_balance

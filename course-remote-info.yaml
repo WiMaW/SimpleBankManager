@@ -4,7 +4,7 @@ hyperskill_project:
   is_template_based: false
   use_ide: true
   environment: android
-update_date: "Thu, 26 Dec 2024 12:21:12 UTC"
+update_date: "Fri, 27 Dec 2024 10:24:31 UTC"
 stages:
   - id: 1868
     step: 27105
@@ -20,7 +20,7 @@ stages:
     is_completed: true
   - id: 1872
     step: 27109
-    is_completed: false
+    is_completed: true
 topics:
   0:
     - title: Data structures

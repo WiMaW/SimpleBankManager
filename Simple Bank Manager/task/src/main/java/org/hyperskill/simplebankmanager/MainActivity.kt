@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import java.io.Serializable
 
 class MainActivity : AppCompatActivity(), LoginFragment.LoginFragmentListener,
-    UserMenuFragment.UserMenuFragmentListener {
+    UserMenuFragment.UserMenuFragmentListener, UserMenuFragment.UserMenuFragmentListenerForBalance {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -31,6 +31,9 @@ class MainActivity : AppCompatActivity(), LoginFragment.LoginFragmentListener,
         return intent.extras?.getSerializable("exchangeMap")
     }
 
+    override fun getBillInfoMap(): Serializable? {
+        return intent.extras?.getSerializable("billInfo")
+    }
 
     override fun getLoginAndPassword(usernameInput: String, passwordInput: String) {
         var usernameIntent = "Lara"

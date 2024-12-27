@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.hyperskill.simplebankmanager.Stage5UnitTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2024-12-27T14:01:05" hostname="MacBook-Air-Wioleta.local" time="4.769">
+  <properties/>
+  <testcase name="test00_checkNavigationOnPayBills" classname="org.hyperskill.simplebankmanager.Stage5UnitTest" time="3.539"/>
+  <testcase name="test01_checkDialogDataCorrectBillCodeInput" classname="org.hyperskill.simplebankmanager.Stage5UnitTest" time="0.208"/>
+  <testcase name="test02_checkDialogDataIncorrectBillCode" classname="org.hyperskill.simplebankmanager.Stage5UnitTest" time="0.116"/>
+  <testcase name="test03_payBillSuccess" classname="org.hyperskill.simplebankmanager.Stage5UnitTest" time="0.185"/>
+  <testcase name="test04_checkDialogDataCorrectBillCodeCancelBillPayment" classname="org.hyperskill.simplebankmanager.Stage5UnitTest" time="0.108"/>
+  <testcase name="test05_afterTransactionBillPaymentInsufficientFunds" classname="org.hyperskill.simplebankmanager.Stage5UnitTest" time="0.159"/>
+  <testcase name="test06_withCustomBalanceInsufficientFundsAfterSecondBillPayment" classname="org.hyperskill.simplebankmanager.Stage5UnitTest" time="0.177"/>
+  <testcase name="test07_customBillSuccessfulPayment" classname="org.hyperskill.simplebankmanager.Stage5UnitTest" time="0.126"/>
+  <testcase name="test08_customBillInsufficientBalance" classname="org.hyperskill.simplebankmanager.Stage5UnitTest" time="0.148"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

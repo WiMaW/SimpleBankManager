@@ -1,4 +1,4 @@
-#Fri Dec 27 11:05:01 CET 2024
+#Fri Dec 27 15:00:56 CET 2024
 base.0=/Users/wioletawrobel/AndroidStudioProjects/Simple Bank Manager/Simple Bank Manager/task/build/intermediates/dex/release/mergeDexRelease/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

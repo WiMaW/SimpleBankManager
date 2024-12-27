@@ -4,6 +4,10 @@
         "source": "/Users/wioletawrobel/.gradle/daemon/8.9/org.hyperskill.simplebankmanager.Simple_Bank_Manager-task-main-49:/layout/fragment_calculate_exchange.xml"
     },
     {
+        "merged": "org.hyperskill.simplebankmanager.Simple_Bank_Manager-task-mergeReleaseResources-47:/layout/fragment_pay_bills.xml",
+        "source": "org.hyperskill.simplebankmanager.Simple_Bank_Manager-task-main-49:/layout/fragment_pay_bills.xml"
+    },
+    {
         "merged": "/Users/wioletawrobel/.gradle/daemon/8.9/org.hyperskill.simplebankmanager.Simple_Bank_Manager-task-mergeReleaseResources-47:/layout/fragment_user_menu.xml",
         "source": "/Users/wioletawrobel/.gradle/daemon/8.9/org.hyperskill.simplebankmanager.Simple_Bank_Manager-task-main-49:/layout/fragment_user_menu.xml"
     },
@@ -18,10 +22,6 @@
     {
         "merged": "/Users/wioletawrobel/.gradle/daemon/8.9/org.hyperskill.simplebankmanager.Simple_Bank_Manager-task-mergeReleaseResources-47:/layout/fragment_login.xml",
         "source": "/Users/wioletawrobel/.gradle/daemon/8.9/org.hyperskill.simplebankmanager.Simple_Bank_Manager-task-main-49:/layout/fragment_login.xml"
-    },
-    {
-        "merged": "org.hyperskill.simplebankmanager.Simple_Bank_Manager-task-mergeReleaseResources-47:/layout/fragment_calculate_exchange.xml",
-        "source": "org.hyperskill.simplebankmanager.Simple_Bank_Manager-task-main-49:/layout/fragment_calculate_exchange.xml"
     },
     {
         "merged": "/Users/wioletawrobel/.gradle/daemon/8.9/org.hyperskill.simplebankmanager.Simple_Bank_Manager-task-mergeReleaseResources-47:/layout/fragment_transfer_funds.xml",
