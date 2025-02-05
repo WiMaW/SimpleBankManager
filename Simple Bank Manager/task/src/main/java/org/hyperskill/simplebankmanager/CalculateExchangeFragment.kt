@@ -14,7 +14,6 @@ import android.widget.TextView
 import android.widget.Toast
 
 class CalculateExchangeFragment : Fragment() {
-    // TODO: Rename and change types of parameters
     private var exchangeMap: Map<String, Map<String, Double>>? = null
 
     private lateinit var exchangeFromSpinner: Spinner
@@ -41,7 +40,6 @@ class CalculateExchangeFragment : Fragment() {
                         "GBP" to 0.25
                     )
                 )
-
         }
     }
 
@@ -49,10 +47,8 @@ class CalculateExchangeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_calculate_exchange, container, false)
     }
-
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -75,7 +71,6 @@ class CalculateExchangeFragment : Fragment() {
                 adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
                 exchangeFromSpinner.adapter = adapter
                 exchangeToSpinner.adapter = adapter
-
                 exchangeFromSpinner.setSelection(1)
             }
         }
@@ -88,7 +83,6 @@ class CalculateExchangeFragment : Fragment() {
                 id: Long
             ) {
                 if (exchangeFromSpinner.selectedItem == exchangeToSpinner.selectedItem) {
-
                     if (currencyTo == currencyFrom) {
                         Toast.makeText(
                             context,
@@ -103,9 +97,8 @@ class CalculateExchangeFragment : Fragment() {
                     }
                 }
             }
-            override fun onNothingSelected(parent: AdapterView<*>?) {
-                TODO("Not yet implemented")
-            }
+
+            override fun onNothingSelected(parent: AdapterView<*>?) {}
         }
 
         exchangeToSpinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
@@ -116,7 +109,6 @@ class CalculateExchangeFragment : Fragment() {
                 id: Long
             ) {
                 if (exchangeFromSpinner.selectedItem == exchangeToSpinner.selectedItem) {
-
                     if (currencyTo == currencyFrom) {
                         Toast.makeText(
                             context,
@@ -131,9 +123,8 @@ class CalculateExchangeFragment : Fragment() {
                     }
                 }
             }
-            override fun onNothingSelected(parent: AdapterView<*>?) {
-                TODO("Not yet implemented")
-            }
+
+            override fun onNothingSelected(parent: AdapterView<*>?) {}
         }
 
         calculateButton.setOnClickListener {

@@ -41,6 +41,18 @@
                       </LayoutPositions>
                     </value>
                   </entry>
+                  <entry key="payBillsFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="-524" />
+                            <option name="y" value="-656" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
                   <entry key="transferFundsFragment">
                     <value>
                       <LayoutPositions>
@@ -65,6 +77,11 @@
                         <option name="myPositions">
                           <map>
                             <entry key="action_userMenuFragment_to_calculateExchangeFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_userMenuFragment_to_payBillsFragment">
                               <value>
                                 <LayoutPositions />
                               </value>
